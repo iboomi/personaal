@@ -32,7 +32,7 @@ p{
 }
 header{
   text-align: center;
-  height: 100vh;
+  height: 800px;
   background-image: url(img/background.png);
   background-size: cover;
 }
@@ -93,24 +93,19 @@ button{
 }
 #about-me{
   color:white;
-  height: 100vh;
+  height: 800px;
   background: linear-gradient(to top right,#1e2d41 , #1d4476);
   display: grid;
   grid-template-columns: 10% 30% 60%;
   grid-template-rows: 7% 15% 1fr 1fr 7%;
+  grid-column-gap: 60px;
 }
 #skills{
-  width: 45vw;
+  width: 85%;
   grid-area: 2 / 3 / 5 / 3;
-  margin-left: 13%;
-  margin-top: 9%;
-  min-width: 550px;
 }
 @media screen and (min-width:1599px){
-  #skills{
-    margin-top: 11%;
 
-  }
 }
 .about-heading{
   grid-area: 2 / 2 / 2 / 2;
@@ -132,7 +127,7 @@ button{
   }
 }
 #my-work{
-  height: 100vh;
+  height: 800px;
   background: linear-gradient(to top right,#172835 , #2374b5);
   display: grid;
   grid-template-rows: 7% 7% 1fr 14%;
@@ -202,10 +197,10 @@ button{
   align-items: center;
   justify-content: flex-start;
 }
-.contact{
+#contact{
   background-color:#EAEAEA;
   background-size: cover;
-  height: 90vh;
+  height: 800px;
   display: grid;
   grid-template-rows: 7% 7% 1fr 7% 7%;
   grid-template-columns: 10% 25% 1fr 10%;
@@ -276,7 +271,3 @@ input{
   width: 100%;
   margin-left: 3%;
 }
-
-
-
-  d
