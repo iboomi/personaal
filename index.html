@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="master.css">
+      <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+      <title>Nikita web developer</title>
+   </head>
+   <body>
+      <main>
+         <header>
+            <nav>
+               <ul>
+                  <li><a href="#about-me">About me</a></li>
+                  <li><a href="#my-work">My work</a></li>
+                  <li><a href="#">Contact me</a></li>
+               </ul>
+            </nav>
+            <div class="welcome">
+               <p class="p-welcome">Welcome</p>
+               <p class="p-to-my-website">to my website</p>
+               <h1>I am <span class="nikita">Nikita</span> - web developer</h1>
+            </div>
+         </header>
+         <div id="about-me">
+            <h2 class="about-heading">About me</h2>
+            <img src="img/nickskills.png" id="skills" alt="my skills">
+            <p class="about-text-first">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+               enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+               reprehenderit in voluptate velit esse cillumdolore eu fugiat
+               nulla pariatur.
+            </p>
+            <p class="about-text-second">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+               eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+               enim ad minim veniam, quis nostrud exercitation ullamco laboris
+               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+               reprehenderit in voluptate velit esse cillumdolore eu fugiat
+               nulla pariatur.
+            </p>
+         </div>
+         <div id="my-work">
+            <h2 class="work-heading">My work</h2>
+            <div class="l-arr">
+               <button>
+               <img src="img/leftarrow.png" alt="left arrow">
+               </button>
+            </div>
+            <div class="r-arr">
+               <button>
+               <img src="img/rightarrow.png" alt="right arrow">
+               </button>
+            </div>
+            <div class="projects">
+               <div class="first-work">
+                  <div class="work-line">
+                     <div class="under-text"></div>
+                  </div>
+               </div>
+               <div class="second-work">
+                  <div class="work-line">
+                     <div class="under-text"></div>
+                  </div>
+               </div>
+               <div class="third-work">
+                  <div class="work-line">
+                     <div class="under-text"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="contact">
+           <h2 class="contact-heading">Contact me</h2>
+             <form  action="https://formspree.io/nikita.bilotserkivskyy@gmail.com"
+             method="POST" class="form-contact">
+             <p>Github</p>
+             <p>Email</p>
+             <p>Skype</p>
+               <label class="name"><p class="sss">Name</p>
+                 <input type="text" class="name-area" name="name" required>
+               </label>
+               <label class="email"><p class="sss">Email</p>
+                 <input type="email" class="email-area" name="email" required>
+               </label>
+               <label class="message"><p class="sss">Your message</p>
+                 <textarea name="message-area" rows="5"></textarea>
+               </label>
+               <label class="send">
+                 <input type="button" value="Send" class="send-button">
+               </label>
+             </form>
+         </div>
+      </main>
+   </body>
+</html>
