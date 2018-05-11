@@ -29,7 +29,7 @@ ul li a:hover{
     font-size: 160%;
   }
 }
-p{
+body p{
   margin: 0;
 }
 header{
@@ -84,6 +84,7 @@ button{
 .p-to-my-website{
   font-size: 170%;
   margin-top: 2vh;
+  margin-bottom: 2%;
 }
 @media screen and (min-width:1599px){
   .p-to-my-website{
@@ -124,7 +125,7 @@ button{
   }
 }
 .about-text-second{
-  padding-top: 80px;
+  padding-top: 15%;
 }
 @media screen and (min-width:1599px){
   .about-text-second{
@@ -182,14 +183,22 @@ button{
   }
 }
 .work-line{
-  height: 310px;
+  color: white;
+  position: sticky;
+  height: 80%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
+.p-work{
+  margin: 0;
+}
 .under-text{
   width: 150px;
-  border: 1px solid white;
+  border-bottom: 2px solid white;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2%;
 }
 .l-arr{
   grid-area: 3 / 1 / 3 / 1;
@@ -208,7 +217,7 @@ button{
   background-size: cover;
   height: 600px;
   display: grid;
-  grid-template-rows: 7% 7% 1fr 7% 7%;
+  grid-template-rows: 7% 7% 1fr 1fr 7% 7%;
   grid-template-columns: 10% 45% 35% 1fr;
 }
 .contact-heading{
@@ -216,7 +225,7 @@ button{
   grid-area: 2 / 2 / 2 / 2;
 }
 .form-contact{
-  grid-area: 3 / 3 / 4 / 4;
+  grid-area: 3 / 3 / 5 / 4;
   display: grid;
   grid-template-rows: 1fr 1fr 1.5fr 1fr;
   grid-template-columns:1fr;
@@ -236,14 +245,40 @@ button{
 #message{
   grid-area: 3 / 1 / 3 / 1;
 }
+.contacts{
+  grid-area: 3 / 2 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-control{
+
+}
+#facebook{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
 form>.btn-primary{
-  background-color: #3da8f8;
-  border-color: #3da8f8;
+  border-radius: 5px;
+  width: 50%;
+  height: 60%;
+  align-self: center;
+  justify-content: center;
+}
+form>.btn-outline-primary{
   border-radius: 5px;
   width: 50%;
   height: 60%;
   align-self: center;
   justify-self: center;
+  border-color: #3da8f8;
+}
+form>.btn-outline-primary:hover{
+  background-color: #3da8f8;
+  border-color: #3da8f8;
+  color: white;
 }
 textarea{
   width: 70%;
@@ -265,4 +300,25 @@ input{
 .sss{
   width: 100%;
   margin-left: 3%;
+}
+footer{
+  color: white;
+  height: 100px;
+  background-color: #08192f;
+}
+.footer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
 }

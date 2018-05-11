@@ -18,19 +18,21 @@
                <ul>
                   <li><a href="#about-me">About me</a></li>
                   <li><a href="#my-work">My work</a></li>
-                  <li><a href="#">Contact me</a></li>
+                  <li><a href="#contact">Contact me</a></li>
                </ul>
             </nav>
             <div class="welcome">
                <p class="p-welcome">Welcome</p>
                <p class="p-to-my-website">to my website</p>
                <h1>I am <span class="nikita">Nikita</span> - web developer</h1>
+               <h1 class="ml12"><spna>A new production</span></h1>
+
             </div>
          </header>
       <main>
          <div id="about-me">
             <h2 class="about-heading">About me</h2>
-            <img src="img/nickskills.png" id="skills" alt="my skills">
+            <img src="img/nickskills.svg" id="skills" alt="my skills">
             <div id="p-about">
               <p class="about-text-first">
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -65,41 +67,49 @@
             <div class="projects">
                <div class="first-work">
                   <div class="work-line">
-                     <div class="under-text"></div>
+                     <div class="under-text">Work 1</div>
                   </div>
                </div>
                <div class="second-work">
                   <div class="work-line">
-                     <div class="under-text"></div>
+                     <div class="under-text">Work 2</div>
                   </div>
                </div>
                <div class="third-work">
                   <div class="work-line">
-                     <div class="under-text"></div>
+                     <div class="under-text">Work 3</div>
                   </div>
                </div>
             </div>
          </div>
          <div id="contact">
            <h2 class="contact-heading">Contact me</h2>
+           <div class="contacts">
+             <p>Facebook</p>
+           </div>
              <form  action="https://formspree.io/nikita.bilotserkivskyy@gmail.com"
              method="POST" class="form-contact">
              <div class="form-group" id="name">
-               <label for="exampleFormControlInput1">Name</label>
+               <label>Name</label>
                <input type="text" class="form-control">
              </div>
                <div class="form-group" id="email">
-                 <label for="exampleFormControlInput1">Email address</label>
+                 <label>Email address</label>
                  <input type="email" class="form-control"  placeholder="name@example.com">
                </div>
                <div class="form-group" id="message">
-                  <label for="exampleFormControlTextarea1">Your message</label>
+                  <label>Your message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-               <button type="submit" class="btn-primary">Send</button>
+                <button type="button" class="btn btn-outline-primary">Send</button>
              </form>
          </div>
       </main>
+      <footer>
+        <div class="footer">
+          <h2>Footer</h2>
+        </div>
+      </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js"
           integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
@@ -108,5 +118,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+        <script src="animate.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        </script>
    </body>
 </html>
