@@ -48,7 +48,7 @@ body p{
 header{
   text-align: center;
   height: 770px;
-  background-image: url(img/background.png);
+  background-image: url(../img/background.png);
   background-size: cover;
 }
 nav{
