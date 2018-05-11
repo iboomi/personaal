@@ -321,7 +321,9 @@ button{
   display: flex;
   justify-content: center;
 }
-
+#send{
+  height: 75%;
+}
 form>.btn-primary{
   border-radius: 5px;
   width: 50%;
