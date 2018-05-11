@@ -71,11 +71,6 @@ button{
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width:1599px){
-  .welcome{
-    margin-top: 12%;
-  }
-}
 .p-welcome{
   font-size: 250%;
 }
