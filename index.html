@@ -12,13 +12,12 @@
       <title>Nikita web developer</title>
    </head>
    <body>
-
          <header>
             <nav>
                <ul>
-                  <li><a href="#about-me">About me</a></li>
-                  <li><a href="#my-work">My work</a></li>
-                  <li><a href="#contact">Contact me</a></li>
+                  <li id="li-about"><a href="#about-me">About me</a></li>
+                  <li id="li-work"><a href="#my-work">My work</a></li>
+                  <li id="li-contact"><a href="#contact">Contact me</a></li>
                </ul>
             </nav>
             <div class="welcome">
@@ -30,7 +29,9 @@
       <main>
          <div id="about-me">
             <h2 class="about-heading">About me</h2>
-            <img src="img/nickskills.svg" id="skills" alt="my skills">
+            <div class="skill">
+              <img src="img/nickskills.svg" id="skills" alt="my skills">
+            </div>
             <div id="p-about">
               <p class="about-text-first">
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -97,7 +98,7 @@
                </div>
                <div class="form-group" id="message">
                   <label>Your message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <textarea class="form-control" id="text-area" rows="3"></textarea>
                 </div>
                 <button type="button" class="btn btn-outline-primary">Send</button>
              </form>
@@ -116,6 +117,5 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-        </script>
    </body>
 </html>
