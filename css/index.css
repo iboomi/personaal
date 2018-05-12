@@ -1,0 +1,373 @@
+body{
+  max-width: 1920px;
+  margin: auto;
+  font-family: 'Gothic A1', sans-serif;
+}
+ul{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  padding-top: 2.5%;
+}
+li{
+  list-style: none;
+  margin: 0 2%;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 110%;
+
+}
+ul li a:hover{
+  text-decoration: none;
+  color: #00a9ff;
+
+}
+#li-about{
+  animation-duration: 2s;
+  animation-name: fadeInLeftBig;
+}
+#li-work{
+  animation-duration: 1.5s;
+  animation-name: fadeInLeftBig;
+}
+#li-contact{
+  animation-duration: 1s;
+  animation-name: fadeInLeftBig;
+}
+@media screen and (min-width:1599px){
+  a{
+    font-size: 160%;
+  }
+}
+body p{
+  margin: 0;
+}
+header{
+  text-align: center;
+  height: 770px;
+  background-image: url(../img/background.png);
+  background-size: cover;
+}
+nav{
+  height: 8%;
+}
+h1{
+  margin: 10vh;
+  font-size: 230%;
+  animation-duration: 2s;
+  animation-name: fadeInLeftBig;
+}
+@media screen and (min-width:1599px){
+  h1{
+    margin: 11vh;
+    font-size: 250%;
+  }
+}
+h2{
+  color: white;
+  margin: 0;
+}
+@media screen and (min-width:1599px){
+  h2{
+    font-size: 30px;
+  }
+}
+button{
+  background: none;
+  border: none;
+}
+.welcome{
+  color: white;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@-webkit-keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+.p-welcome{
+  font-size: 250%;
+  animation-duration: 1s;
+  animation-name: fadeInLeftBig;
+}
+
+@media screen and (min-width:1599px){
+  .p-welcome{
+    font-size: 280%;
+  }
+}
+.p-to-my-website{
+  font-size: 170%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  animation-duration: 1.5s;
+  animation-name: fadeInLeftBig;
+}
+@media screen and (min-width:1599px){
+  .p-to-my-website{
+    font-size: 210%;
+  }
+}
+.nikita{
+  color: white;
+  animation-name: change-color;
+  animation-duration: 2s;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes change-color{
+  from {color: white;}
+    to {color: #00a9ff;}
+}
+#about-me{
+  color:white;
+  height: 770px;
+  background: linear-gradient(to top right,#1e2d41 , #1d4476);
+  display: grid;
+  grid-template-columns: 5% 30% 55%;
+  grid-template-rows: 7% 15% 1fr 7%;
+  grid-column-gap: 5%;
+}
+#skills{
+  width: 80%;
+}
+.skill{
+  grid-area: 2 / 3 / 4 / 3;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width:1599px){
+
+}
+#p-about{
+    grid-area: 3 / 2 / 3 / 2;
+    margin-top: 10%;
+}
+.about-heading{
+  grid-area: 2 / 2 / 2 / 2;
+}
+@media screen and (min-width:1599px){
+  .about-text-first{
+    font-size: 20px;
+  }
+}
+.about-text-second{
+  padding-top: 50px;
+}
+@media screen and (min-width:1599px){
+  .about-text-second{
+    font-size: 20px;
+  }
+}
+#my-work{
+  height: 770px;
+  background: linear-gradient(to top right,#172835 , #2374b5);
+  display: grid;
+  grid-template-rows: 7% 7% 1fr 14%;
+  grid-template-columns: 10% 1fr 10%;
+}
+.work-heading{
+  grid-area: 2 / 2 / 2 / 2;
+  color: white;
+}
+.projects{
+  grid-area: 3 / 2 / 3 / 3;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.first-work{
+  border: 2px solid white;
+  height: 370px;
+  width: 250px;
+}
+@media screen and (min-width:1599px){
+  .first-work{
+    height: 420px;
+    width: 300px;
+  }
+}
+.second-work{
+  border: 2px solid white;
+  height: 370px;
+  width: 250px;
+}
+@media screen and (min-width:1599px){
+  .second-work{
+    height: 420px;
+    width: 300px;
+  }
+}
+.third-work{
+  border: 2px solid white;
+  height: 370px;
+  width: 250px;
+}
+@media screen and (min-width:1599px){
+  .third-work{
+    height: 420px;
+    width: 300px;
+  }
+}
+.work-line{
+  color: white;
+  position: sticky;
+  height: 80%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.p-work{
+  margin: 0;
+}
+.under-text{
+  width: 150px;
+  border-bottom: 2px solid white;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2%;
+}
+.l-arr{
+  grid-area: 3 / 1 / 3 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.r-arr{
+  grid-area: 3 / 3 / 3 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#contact{
+  background-color:#EAEAEA;
+  background-size: cover;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 7% 7% 1fr 1fr 7% 7%;
+  grid-template-columns: 10% 45% 35% 1fr;
+}
+.contact-heading{
+  color: black;
+  grid-area: 2 / 2 / 2 / 2;
+}
+.form-contact{
+  grid-area: 3 / 3 / 5 / 4;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1.5fr 1fr;
+  grid-template-columns:1fr;
+  border-radius: 5px;
+  max-width: 500px;
+  background: white;
+  padding: 15px;
+  grid-row-gap: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#name{
+  grid-area: 1 / 1 / 1 / 1;
+}
+#email{
+  grid-area: 2 / 1 / 3 / 1;
+}
+#message{
+  grid-area: 3 / 1 / 3 / 1;
+}
+.contacts{
+  grid-area: 3 / 2 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-group>#text-area{
+  resize: none;
+  height: 100px;
+}
+#facebook{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+#send{
+  height: 75%;
+}
+form>.btn-primary{
+  border-radius: 5px;
+  width: 50%;
+  height: 60%;
+  align-self: center;
+  justify-content: center;
+}
+form>.btn-outline-primary{
+  border-radius: 5px;
+  width: 50%;
+  height: 60%;
+  align-self: center;
+  justify-self: center;
+  border-color: #3da8f8;
+}
+form>.btn-outline-primary:hover{
+  background-color: #3da8f8;
+  border-color: #3da8f8;
+  color: white;
+}
+textarea{
+  width: 70%;
+  height: 90px;
+  margin-left: -10%;
+}
+input{
+  margin-left: -10%;
+}
+.send{
+  grid-area: 4 / 1 / 4 / 1;
+  display: flex;
+  justify-content:center;
+}
+.send-button{
+  width: 200px;
+}
+footer{
+  color: white;
+  height: 100px;
+  background-color: #08192f;
+}
+.footer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
