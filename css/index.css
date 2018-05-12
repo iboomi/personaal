@@ -10,9 +10,19 @@ ul{
   padding: 0;
   padding-top: 2.5%;
 }
+@media screen and (max-width : 770px) {
+  ul{
+    padding-top: 4.5%;
+  }
+}
 li{
   list-style: none;
   margin: 0 2%;
+}
+@media screen and (max-width : 770px) {
+  li{
+    margin: 0 4%;
+  }
 }
 ul li a{
   text-decoration: none;
@@ -37,9 +47,14 @@ ul li a:hover{
   animation-duration: 1s;
   animation-name: fadeInLeftBig;
 }
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   a{
     font-size: 160%;
+  }
+}
+@media screen and (max-width : 770px) {
+  ul li a{
+    font-size: 130%;
   }
 }
 body p{
@@ -51,6 +66,9 @@ header{
   background-image: url(../img/background.png);
   background-size: cover;
 }
+@media screen and (min-width:1699px){
+ header{}
+}
 nav{
   height: 8%;
 }
@@ -60,7 +78,7 @@ h1{
   animation-duration: 2s;
   animation-name: fadeInLeftBig;
 }
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   h1{
     margin: 11vh;
     font-size: 250%;
@@ -70,7 +88,7 @@ h2{
   color: white;
   margin: 0;
 }
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   h2{
     font-size: 30px;
   }
@@ -125,7 +143,7 @@ button{
   animation-name: fadeInLeftBig;
 }
 
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   .p-welcome{
     font-size: 280%;
   }
@@ -137,9 +155,10 @@ button{
   animation-duration: 1.5s;
   animation-name: fadeInLeftBig;
 }
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   .p-to-my-website{
     font-size: 210%;
+    margin-top: 1%;
   }
 }
 .nikita{
@@ -162,35 +181,76 @@ button{
   grid-template-rows: 7% 15% 1fr 7%;
   grid-column-gap: 5%;
 }
+@media screen and (max-width : 1024px) {
+  #about-me{
+    grid-template-rows: 7% 5% 1fr 1fr 5%;
+    grid-template-columns: 5% 1fr 8%;
+  }
+}
 #skills{
   width: 80%;
+}
+@media screen and (max-width : 1024px) {
+  #skills{
+    width: 58%;
+
+  }
+}
+@media screen and (max-width : 770px) {
+  #skills{
+    width: 70%;
+
+  }
 }
 .skill{
   grid-area: 2 / 3 / 4 / 3;
   display: flex;
   align-items: center;
 }
-@media screen and (min-width:1599px){
-
+@media screen and (max-width : 1024px) {
+  .skill{
+    grid-area: 4 / 1 / 4 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 #p-about{
     grid-area: 3 / 2 / 3 / 2;
     margin-top: 10%;
 }
+@media screen and (max-width : 1024px) {
+  #p-about{
+    grid-area: 3 / 2 / 3 / 3;
+    margin-top: 5%;
+  }
+}
+
 .about-heading{
   grid-area: 2 / 2 / 2 / 2;
 }
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   .about-text-first{
-    font-size: 20px;
+    font-size: 120%;
+  }
+}
+@media screen and (max-width : 1024px) {
+  .about-text-first{
+    font-size: 90%;
   }
 }
 .about-text-second{
   padding-top: 50px;
 }
-@media screen and (min-width:1599px){
+@media screen and (min-width:1699px){
   .about-text-second{
-    font-size: 20px;
+    font-size: 120%;
+  }
+}
+@media screen and (max-width : 1024px) {
+  .about-text-second{
+    font-size: 90%;
   }
 }
 #my-work{
@@ -204,43 +264,61 @@ button{
   grid-area: 2 / 2 / 2 / 2;
   color: white;
 }
-.projects{
+#projects{
+
+
+}
+#grid-projects{
   grid-area: 3 / 2 / 3 / 3;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  grid-template-columns: 25% 25% 25%;
+  grid-column-gap: 5%;
+  grid-template-rows: 10% 80% 10%;
+  display: grid;
+  justify-content: center;
+}
+@media screen and (max-width : 1250px) {
+  #grid-projects{
+    grid-template-columns: 22vw 22vw 22vw;
+    grid-template-rows: 15% 75% 15%;
+
+  }
+}
+@media screen and (max-width : 900px) {
+  #grid-projects{
+    grid-template-rows: 22% 1fr 22%;
+  }
+}
+@media screen and (max-width : 770px) {
+  #grid-projects{
+    grid-template-rows: 10% 1fr 10%;
+    grid-template-columns: 15% 1fr 15%;
+  }
 }
 .first-work{
   border: 2px solid white;
-  height: 370px;
-  width: 250px;
+  grid-area: 2 / 1 / 2 / 1;
 }
-@media screen and (min-width:1599px){
+@media screen and (max-width : 770px) {
   .first-work{
-    height: 420px;
-    width: 300px;
+    grid-area: 2 / 2 / 2 / 3;
   }
 }
 .second-work{
   border: 2px solid white;
-  height: 370px;
-  width: 250px;
+  grid-area: 2 / 2 / 2 / 2;
 }
-@media screen and (min-width:1599px){
+@media screen and (max-width : 770px) {
   .second-work{
-    height: 420px;
-    width: 300px;
+    display: none;
   }
 }
 .third-work{
   border: 2px solid white;
-  height: 370px;
-  width: 250px;
+  grid-area: 2 / 3 / 2 / 3;
 }
-@media screen and (min-width:1599px){
+@media screen and (max-width : 770px) {
   .third-work{
-    height: 420px;
-    width: 300px;
+    display: none;
   }
 }
 .work-line{
@@ -260,6 +338,11 @@ button{
   justify-content: center;
   display: flex;
   padding-bottom: 2%;
+}
+@media screen and (max-width : 900px) {
+  .under-text{
+    width: 110px;
+  }
 }
 .l-arr{
   grid-area: 3 / 1 / 3 / 1;
@@ -321,9 +404,6 @@ button{
   display: flex;
   justify-content: center;
 }
-#send{
-  height: 75%;
-}
 form>.btn-primary{
   border-radius: 5px;
   width: 50%;
@@ -334,7 +414,7 @@ form>.btn-primary{
 form>.btn-outline-primary{
   border-radius: 5px;
   width: 50%;
-  height: 60%;
+  height: 75%;
   align-self: center;
   justify-self: center;
   border-color: #3da8f8;
