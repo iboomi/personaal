@@ -262,7 +262,7 @@ button{
 }
 @media screen and (max-width : 500px) {
  #my-work{
-   grid-template-columns: 17% 1fr 17%; 
+   grid-template-columns: 17% 1fr 17%;
  }
 }
 .work-heading{
@@ -347,6 +347,11 @@ button{
 @media screen and (max-width : 900px) {
   .under-text{
     width: 110px;
+  }
+}
+@media screen and (max-width : 770px) {
+  .under-text{
+    width: 60%;
   }
 }
 .l-arr{
