@@ -234,7 +234,11 @@ button{
     margin-top: 5%;
   }
 }
-
+@media screen and (max-width: 480px){
+  #p-about {
+    margin-top: 15%;
+  }
+}
 .about-heading{
   grid-area: 2 / 2 / 2 / 2;
 }
@@ -256,12 +260,7 @@ button{
     font-size: 120%;
   }
 }
-@media screen and (max-width : 480) {
-  .about-text-second{
-    display: none;
-  }
-}
-@media screen and (max-width : 1024px) {
+@media screen and (max-width : 480px) {
   .about-text-second{
     display: none;
   }
