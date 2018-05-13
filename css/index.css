@@ -248,9 +248,14 @@ button{
     font-size: 120%;
   }
 }
+@media screen and (max-width : 480) {
+  .about-text-second{
+    display: none;
+  }
+}
 @media screen and (max-width : 1024px) {
   .about-text-second{
-    font-size: 90%;
+    display: none;
   }
 }
 #my-work{
@@ -305,7 +310,7 @@ button{
     grid-template-columns: 5% 1fr 5%;
   }
 }
-@media screen and (max-width : 470px) {
+@media screen and (max-width : 480px) {
   #grid-projects{
     grid-template-rows: 20% 1fr 20%;
     grid-template-columns: 5% 1fr 5%;
@@ -375,7 +380,7 @@ button{
   align-items: center;
   justify-content: flex-end;
 }
-@media screen and (max-width : 470px) {
+@media screen and (max-width : 480px) {
     #r-arrow{
       width: 40px;
   }
