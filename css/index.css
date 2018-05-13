@@ -187,19 +187,27 @@ button{
     grid-template-columns: 5% 1fr 8%;
   }
 }
+@media screen and (max-width : 480px) {
+  #about-me{
+    grid-template-rows: 7% 5% 30% 1fr 5%;
+  }
+}
 #skills{
   width: 80%;
 }
 @media screen and (max-width : 1024px) {
   #skills{
     width: 58%;
-
   }
 }
 @media screen and (max-width : 770px) {
   #skills{
     width: 70%;
-
+  }
+}
+@media screen and (max-width : 480px) {
+  #skills{
+    width: 90%;
   }
 }
 .skill{
