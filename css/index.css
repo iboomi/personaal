@@ -408,7 +408,15 @@ button{
   height: 600px;
   display: grid;
   grid-template-rows: 7% 7% 1fr 1fr 7% 7%;
-  grid-template-columns: 10% 45% 35% 1fr;
+  grid-template-columns: 10% 40% 40% 10%;
+}
+@media screen and (max-width : 770px) {
+   #contact{
+     height: 1100px;
+     display: grid;
+     grid-template-columns: 10% 1fr 10%;
+     grid-template-rows: 7% 7% 50% 1fr 7%;
+   }
 }
 .contact-heading{
   color: black;
@@ -420,11 +428,18 @@ button{
   grid-template-rows: 1fr 1fr 1.5fr 1fr;
   grid-template-columns:1fr;
   border-radius: 5px;
-  max-width: 500px;
+  max-width: 450px;
   background: white;
   padding: 15px;
   grid-row-gap: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+@media screen and (max-width : 770px) {
+   .form-contact{
+     grid-area: 3 / 2 / 4 / 3;
+     justify-self: center;
+     width: 100%;
+    }
 }
 #name{
   grid-area: 1 / 1 / 1 / 1;
@@ -435,20 +450,113 @@ button{
 #message{
   grid-area: 3 / 1 / 3 / 1;
 }
-.contacts{
-  grid-area: 3 / 2 / 3 / 2;
+#contacts{
+  grid-area: 3 / 2 / 5 / 2;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  align-items: center;
+}
+@media screen and (max-width : 770px) {
+   #contacts{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     grid-area: 4 / 2 / 5 / 2;
+     margin-top: 5%;
+   }
+}
+#all-phone{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#phone-info{
+  opacity: 0;
+  width: 90%;
+  color: black;
+  margin-left: 10%;
+  transition: all 4s ease-in;
+}
+#phone:hover + #phone-info {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+#all-email{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#email-info{
+  opacity: 0;
+  width: 90%;
+  transition: all 4s ease-in;
+  color: black;
+  margin-left: 10%;
+}
+#email:hover + #email-info {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+#all-facebook{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#facebook-info{
+  opacity: 0;
+  width: 90%;
+  transition: all 4s ease-in;
+  color: black;
+  margin-left: 10%;
+}
+#facebook:hover + #facebook-info {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+#all-github{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+#github-info{
+  opacity: 0;
+  width: 90%;
+  transition: all 4s ease-in;
+  color: black;
+  margin-left: 10%;
+}
+#github:hover + #github-info {
+  transition: all 0.5s ease-out;
+  opacity: 1;
+}
+@media screen and (max-width : 770px) {
+  #github-info{
+    opacity: 1;
+    transition:none;
+  }
+  #facebook-info{
+    opacity: 1;
+    transition:none;
+  }
+  #phone-info{
+    opacity: 1;
+    transition:none;
+  }
+  #email-info{
+    opacity: 1;
+    transition:none;
+  }
+}
+img{
+  width: 50px;
 }
 .form-group>#text-area{
   resize: none;
   height: 100px;
-}
-#facebook{
-  width: 15%;
-  display: flex;
-  justify-content: center;
 }
 form>.btn-primary{
   border-radius: 5px;
@@ -488,10 +596,10 @@ input{
 }
 footer{
   color: white;
-  height: 100px;
+  height: 80px;
   background-color: #08192f;
 }
-.footer{
+#footer{
   height: 100%;
   display: flex;
   justify-content: center;
