@@ -28,6 +28,11 @@ li{
     margin: 0 4%;
   }
 }
+@media screen and (max-width : 370px) {
+  nav ul li a{
+    font-size: 105%;
+  }
+}
 ul li a{
   text-decoration: none;
   color: white;
@@ -75,9 +80,6 @@ header{
   height: 770px;
   background-image: url(../img/background.png);
   background-size: cover;
-}
-@media screen and (min-width:1699px){
- header{}
 }
 nav{
   height: 8%;
