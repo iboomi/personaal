@@ -44,6 +44,14 @@ ul li a:hover{
   color: #00a9ff;
 
 }
+div a{
+  text-decoration: none;
+  color: black;
+}
+div a:hover{
+  text-decoration: none;
+  color: black;
+}
 #li-about{
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
@@ -81,8 +89,10 @@ header{
   background-image: url(../img/background.png);
   background-size: cover;
 }
-nav{
-  height: 8%;
+@media screen and (min-width : 1699px){
+  header{
+    height: 1000px;
+  }
 }
 h1{
   margin: 10vh;
@@ -155,8 +165,8 @@ button{
 @-webkit-keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
   }
 
   to {
@@ -169,8 +179,8 @@ button{
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-20%, 0, 0);
+    transform: translate3d(-20%, 0, 0);
   }
 
   to {
